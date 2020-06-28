@@ -190,7 +190,7 @@ proxy-providers:
   # 1.模式选择「进阶模式」 2.填写订阅链接 3.勾选「输出为 Node List」 4.「生成订阅链接」
   #
 
-  DuckDuckGo-Sub: # 冲鸭机场订阅链接
+    name: DuckDuckGo-Sub # 冲鸭机场订阅链接
     type: http
     url: "https://duckduckgo.security/user/sub.php?token=DivineEngine"
     interval: 3600
@@ -272,42 +272,42 @@ rule-providers:
 #   url: # 只有当类型为 HTTP 时才可用，您不需要在本地空间中创建新文件。
 #   interval: # 自动更新间隔，仅在类型为 HTTP 时可用
 
-  Unbreak:
+    name: Unbreak
     type: http
     behavior: classical
     path: ./RuleSet/Unbreak.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
     interval: 86400
 
-  Streaming:
+    name: Streaming
     type: http
     behavior: classical
     path: ./RuleSet/StreamingMedia/Streaming.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
     interval: 86400
 
-  StreamingSE:
+    name: StreamingSE
     type: http
     behavior: classical
     path: ./RuleSet/StreamingMedia/StreamingSE.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/StreamingSE.yaml
     interval: 86400
 
-  Global:
+    name: Global
     type: http
     behavior: classical
     path: ./RuleSet/Global.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
     interval: 86400
 
-  China:
+    name: China
     type: http
     behavior: classical
     path: ./RuleSet/China.yaml
     url: https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
     interval: 86400
 
-  ChinaIP:
+    name: ChinaIP
     type: http
     behavior: ipcidr
     path: ./RuleSet/Extra/ChinaIP.yaml
